@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+/* colors: #284473  #FF9B8C  #ffffff  #2F5911  */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+}

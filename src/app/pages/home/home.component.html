@@ -1,0 +1,44 @@
+<div class="banner">
+    <div class="content">
+        <h1 class="mb-5">Fresh Food <br><span class="contentSpan">Healthier Life</span></h1>
+        <a routerLink="menu">ORDER NOW<i class="bi bi-arrow-right"></i></a>
+    </div>
+</div>
+<div class="container mt-5 mb-4">
+    <h1 class="text-center mb-3">How To Get <span class="contentSpan">Fresh Food</span></h1>
+    <div class="row">
+        <div class="col-lg-4 mt-2">
+            <div class="stepBox">
+                <h1>1</h1>
+                <p>select food</p>
+            </div>
+        </div>
+        <div class="col-lg-4 mt-2">
+            <div class="stepBox">
+                <h1>2</h1>
+                <p>fill the details</p>
+            </div>
+        </div>
+        <div class="col-lg-4 mt-2">
+            <div class="stepBox">
+                <h1>3</h1>
+                <p>your order deliver in minute</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- foodbox -->
+<div class="container mt-5 mb-4">
+    <h1 class="text-center mb-3">Customers <span class="contentSpan">Favourites Food</span></h1>
+    <div class="row mt-4">
+        <div class="col-lg-3" *ngFor="let fd of foodData">
+            <div class="foodbox">
+                <img src=" {{ fd.foodImg }} " alt="">
+                <h3> {{ fd.foodName }} </h3>
+                <p> {{ fd.foodPrice | currency: 'EUR' }} </p>
+            </div>
+        </div>
+    </div>
+    <a routerLink="menu" class="viewMoreBtn">View more <i class="bi bi-arrow-right"></i></a>
+</div>

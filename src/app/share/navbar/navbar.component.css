@@ -1,0 +1,23 @@
+.navbar-brand {
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.navbar-brand:hover {
+    padding: 13px;
+    margin: -13px;
+    background-color: #FF9B8C;
+    color: white;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link.active-link {
+    color: #284473;
+    font-weight: bold;
+    text-decoration: overline;
+    text-decoration-color: #FF9B8C;
+}
+
+@media screen and (max-width: 600px) {
+    
+}

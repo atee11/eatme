@@ -1,0 +1,9 @@
+.aboutImg {
+    border-radius: 6px;
+}
+
+@media screen and (max-width: 600px) {
+    .aboutH {
+        font-size: 45px;
+    }
+}
