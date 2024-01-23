@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class OrderDeatilsService {
 
-  constructor() { }
+  constructor() {}
 
   foodDeatils = [
     {
@@ -57,5 +57,6 @@ export class OrderDeatilsService {
       foodImg: "assets/images/food-8.jpg"
     },
   ]
-
 }
+
+

@@ -7,10 +7,16 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto">
-                <a class="nav-link" aria-current="page" routerLink="" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">Home</a>
-                <a class="nav-link" routerLink="menu" routerLinkActive="active-link">Menu</a>
-                <a class="nav-link" routerLink="about" routerLinkActive="active-link">About</a>
-                <a class="nav-link" routerLink="contact" routerLinkActive="active-link">Contact</a>
+                <a class="nav-link" aria-current="page" routerLink="" routerLinkActive="active-link" 
+                [routerLinkActiveOptions]="{exact:true}"> {{ 'home' | translate }} </a>
+                <a class="nav-link" routerLink="menu" routerLinkActive="active-link"> {{ 'menu' | translate }} </a>
+                <a class="nav-link" routerLink="about" routerLinkActive="active-link"> {{ 'about' | translate }} </a>
+                <a class="nav-link" routerLink="contact" routerLinkActive="active-link"> {{ 'contact' | translate }} </a>
+                
+                <select class="form-select language" (change)="ChangeLang($event)" name="" id="">
+                    <option [selected]="lang==='en'" value="en">English</option>
+                    <option [selected]="lang==='hu'" value="hu">Magyar</option>
+                </select>
             </div>
         </div>
     </div>

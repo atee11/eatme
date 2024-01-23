@@ -1,28 +1,28 @@
 <div class="banner">
     <div class="content">
-        <h1 class="mb-5">Fresh Food <br><span class="contentSpan">Healthier Life</span></h1>
-        <a routerLink="menu">ORDER NOW<i class="bi bi-arrow-right"></i></a>
+        <h1 class="mb-5"> {{ "fresh food" | translate }} <br><span class="contentSpan"> {{ "healthier life" | translate }} </span></h1>
+        <a routerLink="menu"> {{ "ORDER NOW" | translate }} <i class="bi bi-arrow-right"></i></a>
     </div>
 </div>
 <div class="container mt-5 mb-4">
-    <h1 class="text-center mb-3">How To Get <span class="contentSpan">Fresh Food</span></h1>
+    <h1 class="text-center mb-3"> {{ "how to get" | translate }} <span class="contentSpan"> {{ "fresh foods" | translate }} </span></h1>
     <div class="row">
         <div class="col-lg-4 mt-2">
             <div class="stepBox">
                 <h1>1</h1>
-                <p>select food</p>
+                <p> {{ "select food" | translate}} </p>
             </div>
         </div>
         <div class="col-lg-4 mt-2">
             <div class="stepBox">
                 <h1>2</h1>
-                <p>fill the details</p>
+                <p> {{ "fill the details" | translate }} </p>
             </div>
         </div>
         <div class="col-lg-4 mt-2">
             <div class="stepBox">
                 <h1>3</h1>
-                <p>your order deliver in minute</p>
+                <p> {{ "your order deliver in minute" | translate }} </p>
             </div>
         </div>
     </div>
@@ -30,7 +30,7 @@
 
 <!-- foodbox -->
 <div class="container mt-5 mb-4">
-    <h1 class="text-center mb-3">Customers <span class="contentSpan">Favourites Food</span></h1>
+    <h1 class="text-center mb-3"> {{ "customers" | translate }} <span class="contentSpan"> {{ "favourites food" | translate }} </span></h1>
     <div class="row mt-4">
         <div class="col-lg-3" *ngFor="let fd of foodData">
             <div class="foodbox">
@@ -40,5 +40,5 @@
             </div>
         </div>
     </div>
-    <a routerLink="menu" class="viewMoreBtn">View more <i class="bi bi-arrow-right"></i></a>
+    <a routerLink="menu" class="viewMoreBtn">{{ "view more" | translate}} <i class="bi bi-arrow-right"></i></a>
 </div>
