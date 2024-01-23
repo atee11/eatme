@@ -7,10 +7,10 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  
+
   constructor(private translateService: TranslateService) {
     this.translateService.setDefaultLang('en');
-    this.translateService.use(localStorage.getItem('lang') || 'en' )
+    this.translateService.use(this.translateService.currentLang || 'en');
   }
 
   title = 'multi-lang';

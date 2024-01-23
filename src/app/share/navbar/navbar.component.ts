@@ -11,18 +11,15 @@ export class NavbarComponent implements OnInit {
   lang: string = '';
 
   constructor(private translateService: TranslateService) {
-    
+
   }
 
   ngOnInit(): void {
-    this.lang = localStorage.getItem('lang') || 'en';
+    this.lang = this.translateService.currentLang || 'en';
   }
 
   ChangeLang(lang: any) {
     const selectedLanguage = lang.target.value;
-
-    localStorage.setItem('lang', selectedLanguage);
-
     this.translateService.use(selectedLanguage);
   }
 
