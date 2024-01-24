@@ -1,4 +1,3 @@
-// navbar.component.ts
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { CartService, CartItem } from 'src/app/services/cart-services';
