@@ -26,5 +26,11 @@
   "Place Order": "Place Order",
   "Enter Your Email Address": "Enter Your Email Address",
   "Subject": "Subject",
-  "Message": "Message"
+  "Message": "Message",
+  "Add to cart": "Cart",
+  "Quantity": "Quantity",
+  "Amount": "Amount",
+  "Delete": "Delete",
+  "Cart": "Cart",
+  "Send": "Send"
 }
