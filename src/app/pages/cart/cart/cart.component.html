@@ -1,0 +1,40 @@
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <h1 class="text-center"> {{ "Cart" | translate }}</h1>
+        <div class="col-lg-6">
+            <ul class="foodbox mt-3">
+                <li *ngFor="let item of items">
+                    <div class="item-container">
+                        <img src=" {{ item.food.foodImg }} " alt="">
+                        <div>
+                            <h3> {{item.food.foodName}} </h3>
+                            <p> {{ item.food.foodPrice | currency: 'EUR'}} </p>
+                            <p> {{ "Quantity" | translate }}: {{item.quantity}} </p>
+                        </div>
+                        <div class="button-container">
+                            <button id="decBtn" class="btn addCartBtn" (click)="CartService.decreaseQuantity(item.food)">-</button>
+                            <button id="incBtn" class="btn addCartBtn" (click)="CartService.addToCart(item.food)">+</button>
+                            <button id="delBtn" class="btn addCartBtn" (click)="CartService.removeFromCart(item.food)"> {{ "Delete" | translate }} </button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-6 foodbox">
+            <h3> {{ "Enter Your Details" | translate }} </h3>
+            <form action="">
+                <input type="text" class="form-control" required [placeholder]="'Enter Your Full Name' | translate" name="" id="">
+                <input type="number" class="form-control" required [placeholder]="'Enter Your Mobile' | translate" name="" id="">
+                <textarea class="form-control" required [placeholder]="'Enter Your Address' | translate" name="" id="" cols="30"
+                    rows="10"></textarea>
+                <div class="amountDiv mt-3">
+                    <button class="btn ordertBtn"> {{ "Place Order" | translate }} </button>
+                    <h4 class="text-center"> {{ "Amount" | translate }}: <span class="amount">{{ CartService.getTotal() | currency: 'EUR' }}</span></h4>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+</div>
+
+

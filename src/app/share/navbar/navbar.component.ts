@@ -1,5 +1,7 @@
+// navbar.component.ts
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { CartService, CartItem } from 'src/app/services/cart-services';
 
 @Component({
   selector: 'app-navbar',
@@ -9,13 +11,13 @@ import { TranslateService } from '@ngx-translate/core';
 export class NavbarComponent implements OnInit {
 
   lang: string = '';
+  items: CartItem[] = [];
 
-  constructor(private translateService: TranslateService) {
-
-  }
+  constructor(private translateService: TranslateService, private cartService: CartService) { }
 
   ngOnInit(): void {
     this.lang = this.translateService.currentLang || 'en';
+    this.cartService.items$.subscribe(items => this.items = items);
   }
 
   ChangeLang(lang: any) {

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { OrderDeatilsService } from 'src/app/services/order-deatils.service';
-
+import { CartService, Food } from 'src/app/services/cart-services'; // Új import
 
 @Component({
   selector: 'app-menu',
@@ -10,7 +10,7 @@ import { OrderDeatilsService } from 'src/app/services/order-deatils.service';
 export class MenuComponent implements OnInit {
   foodData: any;
 
-  constructor(private service: OrderDeatilsService) {
+  constructor(private service: OrderDeatilsService, private cartService: CartService) {
 
   }
 
@@ -18,4 +18,7 @@ export class MenuComponent implements OnInit {
     this.foodData = this.service.foodDeatils;
   }
 
+  addToCart(food: Food) {
+    this.cartService.addToCart(food);
+  }
 }

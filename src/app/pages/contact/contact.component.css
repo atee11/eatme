@@ -7,6 +7,11 @@
     border-radius: 6px;
 }
 
+.submitBtn:hover {
+    background-color: white;
+    color: #FF9B8C;
+}
+
 @media screen and (max-width: 600px) {
     .formDiv {
         margin-top: 48px;

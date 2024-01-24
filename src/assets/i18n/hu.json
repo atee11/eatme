@@ -17,7 +17,7 @@
   "view more": "Mutass többet",
   "Our": "",
   "Foods": "Ételeink",
-  "Buy": "Kosárba",
+  "Buy": "Vásárlás",
   "Back": "Vissza",
   "Enter Your Details": "Add meg adataidat",
   "Enter Your Full Name": "Add meg a teljes neved",
@@ -26,5 +26,11 @@
   "Place Order": "Rendelés",
   "Enter Your Email Address": "Add meg az email címed",
   "Subject": "Az üzenet tárgya",
-  "Message": "Üzenet"
+  "Message": "Üzenet",
+  "Add to cart": "Kosárhoz ad",
+  "Quantity": "Mennyiség",
+  "Amount": "Összesen",
+  "Delete": "Törlés",
+  "Cart": "Kosár",
+  "Send": "Küldés"
 }

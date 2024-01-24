@@ -29,6 +29,11 @@
     font-weight: bold;
 }
 
+.btn-div {
+    display: flex;
+    justify-content: space-between;
+}
+
 .buyBtn {
     text-decoration: none;
     background-color: #FF9B8C;
@@ -39,6 +44,20 @@
 }
 
 .buyBtn:hover {
+    background-color: white;
+    color: #FF9B8C;
+}
+
+.btn.addCartBtn {
+    text-decoration: none;
+    background-color: #284473;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn.addCartBtn:hover {
     background-color: white;
     color: #FF9B8C;
 }

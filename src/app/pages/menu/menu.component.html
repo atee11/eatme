@@ -1,12 +1,14 @@
-<div class="container mt-5 mb-5">
+<div class="container mt-4 mb-5">
     <div class="row">
         <h1 class="text-center"> {{ "Our" | translate }} <span class="menuSpan"> {{ "Foods" | translate }} </span></h1>
         <div class="col-lg-3" *ngFor="let fd of foodData">
             <div class="foodbox mt-3">
                 <img src=" {{ fd.foodImg }} " alt="">
-                <h3> {{fd.foodName}} </h3>
-                <p> {{ fd.foodPrice | currency: 'EUR'}} </p>
-                <a [routerLink]="['/menu',fd.id]" class="buyBtn"> {{ "Buy" | translate }} <i class="bi bi-bag"></i></a>
+                    <h3> {{fd.foodName}} </h3>
+                    <p> {{ fd.foodPrice | currency: 'EUR'}} </p>
+                <div class="btn-div">
+                    <button class="btn addCartBtn" (click)="addToCart(fd)"> {{ "Add to cart" | translate }} <i class="bi bi-cart"></i></button>
+                </div>    
             </div>
         </div>
     </div>

@@ -5,8 +5,8 @@
 }
 
 .navbar-brand:hover {
-    padding: 13px;
-    margin: -13px;
+    padding: 14px;
+    margin: -14px;
     background-color: #FF9B8C;
     color: white;
 }
@@ -16,6 +16,28 @@
     font-weight: bold;
     text-decoration: overline;
     text-decoration-color: #FF9B8C;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link.badgeLink {
+    text-decoration: none;
+}
+
+.badgeLink {
+    width: auto;
+    height: auto;
+    margin-right: 15px;
+    font-weight: bold;
+    color: #284473;
+    display: flex;
+    align-items: center;
+}
+
+.badge {
+    color: #284473;
+    font-size: 16px;
+    margin-left: 2px;
+    padding: 5px;
+    width: 15px;
 }
 
 .language {
