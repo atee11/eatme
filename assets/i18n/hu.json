@@ -8,10 +8,10 @@
   "fresh foods": "Friss Ételt",
   "healthier life": "Egészséges Élet",
   "ORDER NOW": "RENDELJ MOST",
-  "how to get": "Hogyan Szerezzünk Be",
-  "select food": "válasszon ételt",
-  "fill the details": "töltse ki a részleteket",
-  "your order deliver in minute": "percek alatt kézbesítjük megrendelését",
+  "how to get": "Hogyan rendelj",
+  "select food": "válassz ételt",
+  "fill the details": "töltsd ki a részleteket",
+  "your order deliver in minute": "percek alatt kézbesítjük megrendelésed",
   "customers": "Vásárlóink",
   "favourites food": "Kedvenc Ételei",
   "view more": "Mutass többet",
@@ -32,5 +32,7 @@
   "Amount": "Összesen",
   "Delete": "Törlés",
   "Cart": "Kosár",
-  "Send": "Küldés"
+  "Send": "Küldés",
+  "Search": "Keresés",
+  "Search eatme!": "Keresés az eatme!-n"
 }
