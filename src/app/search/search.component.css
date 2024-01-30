@@ -32,3 +32,9 @@ div button {
 div button:hover {
     opacity: 1;
 }
+
+@media screen and (max-width: 360px) {
+    div input {
+        width: 80%;
+    }
+}
