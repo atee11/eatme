@@ -14,6 +14,8 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { MenupageComponent } from './pages/menupage/menupage.component';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { CartComponent } from './pages/cart/cart/cart.component';
+import { SearchComponent } from './search/search.component';
+import { FormsModule } from '@angular/forms';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -29,7 +31,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     AboutComponent,
     ContactComponent,
     MenupageComponent,
-    CartComponent
+    CartComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +44,8 @@ export function HttpLoaderFactory(http: HttpClient) {
         deps: [HttpClient],
       },
     }),
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -13,7 +13,8 @@ const routes: Routes = [
   { path: 'menu/:id', component:MenupageComponent},
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'cart', component: CartComponent }
+  { path: 'cart', component: CartComponent },
+  { path: 'search/:searchTerm', component: MenuComponent }
 ];
 
 @NgModule({
