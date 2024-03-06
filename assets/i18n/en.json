@@ -34,5 +34,21 @@
   "Cart": "Cart",
   "Send": "Send",
   "Search": "Search",
-  "Search eatme!": "Search eatme!"
+  "Search eatme!": "Search eatme!",
+  "login": "Sign in",
+  "register": "Sign up",
+  "Please enter your username": "Please enter your username",
+  "Please enter the password": "Please enter the password",
+  "Username": "Username",
+  "Password": "Password",
+  "Sign up": "Sign up",
+  "Registration was successful!": "Registration was successful!",
+  "Login successful": "Login successful",
+  "Incorrect password": "Incorrect password",
+  "User does not exist": "User does not exist",
+  "The form is invalid": "The form is invalid",
+  "Error during registration": "Error during registration",
+  "Username already exists": "Username already exists",
+  "Logout": "Logout",
+  "Cart is empty": "Cart is empty"
 }

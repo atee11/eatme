@@ -34,5 +34,21 @@
   "Cart": "Kosár",
   "Send": "Küldés",
   "Search": "Keresés",
-  "Search eatme!": "Keresés az eatme!-n"
+  "Search eatme!": "Keresés az eatme!-n",
+  "login": "Bejelentkezés",
+  "register": "Regisztráció",
+  "Please enter your username": "Kérlek add meg a felhasználóneved",
+  "Please enter the password": "Kérlek add meg a jelszavad",
+  "Username": "Felhasználónév",
+  "Password": "Jelszó",
+  "Sign up": "Regisztráció",
+  "Registration was successful!": "A regisztráció sikeres volt!",
+  "Login successful": "Sikeres bejelentkezés",
+  "Incorrect password": "Hibás jelszó",
+  "User does not exist": "A felhasználó nem létezik",
+  "The form is invalid": "Az űrlap érvénytelen",
+  "Error during registration": "Hiba a regszitráció során",
+  "Username already exists": "A felhasználónév már létezik",
+  "Logout": "Kilépés",
+  "Cart is empty": " A kosár üres"
 }
