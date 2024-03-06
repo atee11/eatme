@@ -16,6 +16,12 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { CartComponent } from './pages/cart/cart/cart.component';
 import { SearchComponent } from './search/search.component';
 import { FormsModule } from '@angular/forms';
+import { IDBService } from './services/idbservice.service';
+import { RegisterComponent } from './pages/register/register.component';
+import { LoginComponent } from './pages/login/login.component';
+import { ToastrModule, ToastNoAnimation, ToastNoAnimationModule } from 'ngx-toastr';
+import { CommonModule } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -32,7 +38,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     ContactComponent,
     MenupageComponent,
     CartComponent,
-    SearchComponent
+    SearchComponent,
+    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -45,9 +53,14 @@ export function HttpLoaderFactory(http: HttpClient) {
       },
     }),
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ToastrModule.forRoot(),
+    ToastNoAnimationModule.forRoot(),
+    ToastNoAnimation,
+    CommonModule,
+    BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [IDBService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

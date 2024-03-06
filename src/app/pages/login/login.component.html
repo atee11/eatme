@@ -1,0 +1,22 @@
+<div class="form-container">
+    <h2 class="form-title mb-5 mt-5">{{ "login" | translate }}</h2>
+    <form #loginForm="ngForm" (ngSubmit)="onLogin(loginForm)" novalidate>
+        <div class="mb-3">
+            <label for="username" class="form-label">{{ "Username" | translate }}</label>
+            <input type="text" class="form-control" id="username" required [(ngModel)]="username" name="username"
+                #usernameField="ngModel">
+            <div class="invalid-feedback" *ngIf="usernameField.invalid && usernameField.touched">
+                {{ "Please enter your username" | translate }}
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">{{ "Password" | translate }}</label>
+            <input type="password" class="form-control" id="password" required [(ngModel)]="password" name="password"
+                #passwordField="ngModel">
+            <div class="invalid-feedback" *ngIf="passwordField.invalid && passwordField.touched">
+                {{ "Please enter the password" | translate }}
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid">{{ "login" | translate }}</button>
+    </form>
+</div>

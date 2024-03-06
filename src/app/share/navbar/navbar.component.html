@@ -7,17 +7,25 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto">
-                <a class="nav-link" aria-current="page" routerLink="" routerLinkActive="active-link" 
-                [routerLinkActiveOptions]="{exact:true}"> {{ 'home' | translate }} </a>
+                <a class="nav-link" aria-current="page" routerLink="" routerLinkActive="active-link"
+                    [routerLinkActiveOptions]="{exact:true}"> {{ 'home' | translate }} </a>
                 <a class="nav-link" routerLink="menu" routerLinkActive="active-link"> {{ 'menu' | translate }} </a>
                 <a class="nav-link" routerLink="about" routerLinkActive="active-link"> {{ 'about' | translate }} </a>
-                <a class="nav-link" routerLink="contact" routerLinkActive="active-link"> {{ 'contact' | translate }} </a>
-
+                <a class="nav-link" routerLink="contact" routerLinkActive="active-link"> {{ 'contact' | translate }}
+                </a>
+                <a class="nav-link btn" *ngIf="!(authService.user$ | async)" routerLink="login"
+                    routerLinkActive="active-link"><i class="bi bi-box-arrow-in-right"></i>&nbsp; {{ 'login' | translate }} </a>
+                <a class="nav-link btn" *ngIf="!(authService.user$ | async)" routerLink="register"
+                    routerLinkActive="active-link"><i class="bi bi-pencil"></i>&nbsp; {{ 'register' | translate }} </a>
+                <select *ngIf="(authService.user$ | async) as user" class="form-select" aria-label="User menu"
+                    (change)="handleSelect($event)">
+                    <option selected>{{ user.username }}</option>
+                    <option value="logout"> {{ 'Logout' | translate }} </option>
+                </select>
                 <a class="nav-link badgeLink" routerLink="cart" routerLinkActive="active-link">
                     <i class="bi bi-cart"></i>
                     <span class="badge">{{items.length || '0'}}</span>
                 </a>
-                
                 <select class="form-select language" (change)="ChangeLang($event)" name="" id="">
                     <option [selected]="lang==='en'" value="en">English</option>
                     <option [selected]="lang==='hu'" value="hu">Magyar</option>

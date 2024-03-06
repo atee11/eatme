@@ -1,49 +1,88 @@
 .navbar-brand {
-    transition: all 0.2s ease;
-    box-sizing: border-box;
-    height: 100%;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+  height: 100%;
 }
 
 .navbar-brand:hover {
-    padding: 14px;
-    margin: -14px;
-    background-color: #FF9B8C;
-    color: white;
+  padding: 14px;
+  margin: -14px;
+  background-color: #ff9b8c;
+  color: white;
+}
+
+.nav-link {
+  white-space: nowrap;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link.active-link {
-    color: #284473;
-    font-weight: bold;
-    text-decoration: overline;
-    text-decoration-color: #FF9B8C;
+  color: #284473;
+  font-weight: bold;
+  text-decoration: overline;
+  text-decoration-color: #ff9b8c;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link.badgeLink {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .badgeLink {
-    width: auto;
-    height: auto;
-    margin-right: 15px;
-    font-weight: bold;
-    color: #284473;
-    display: flex;
-    align-items: center;
+  width: auto;
+  height: auto;
+  margin-right: 15px;
+  font-weight: bold;
+  color: #284473;
+  display: flex;
+  align-items: center;
 }
 
 .badge {
-    color: #284473;
-    font-size: 16px;
-    margin-left: 2px;
-    padding: 5px;
-    width: 15px;
+  color: #284473;
+  font-size: 16px;
+  margin-left: 2px;
+  padding: 5px;
+  width: 15px;
 }
 
-.language {
-    
+.btn {
+  text-decoration: none;
+  color: #284473;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.btn:hover {
+  background-color: #ff9b8c;
+  color: white;
+}
+
+select {
+  outline: none;
+  border: none;
+  width: 110px;
+}
+
+select:hover {
+  outline: none;
+  border: none;
+  background-color: #ff9b8c;
+  color: white;
 }
 
 @media screen and (max-width: 600px) {
-    
+  .btn {
+    margin-bottom: 5px;
+    text-decoration: none;
+    background-color: #ff9b8c;
+    color: #284473;
+    border-radius: 6px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+  }
 }

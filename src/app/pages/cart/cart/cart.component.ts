@@ -7,10 +7,10 @@ import { CartService } from 'src/app/services/cart-services';
   styleUrls: ['./cart.component.css']
 })
 export class CartComponent implements OnInit {
-[x: string]: any;
+  [x: string]: any;
   items: any[] = [];
 
-  constructor(public CartService: CartService) { } 
+  constructor(public CartService: CartService) { }
 
   ngOnInit() {
     this.items = this.CartService.getItems();
