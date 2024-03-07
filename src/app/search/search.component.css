@@ -1,40 +1,85 @@
 div {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-    margin-bottom: 1.25rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1.25rem;
 }
 
 div input {
-    border-radius: 10rem 0 0 10rem;
-    border: none;
-    height: 3rem;
-    width: 20rem;
-    background-color: #fedfdb;
-    padding: 1.2rem;
-    font-size: 1rem;
-    font-weight: 500;
-    outline: none;
+  border-radius: 10rem 0 0 10rem;
+  border: none;
+  height: 3rem;
+  width: 20rem;
+  background-color: #fedfdb;
+  padding: 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  outline: none;
 }
 
 div button {
+  color: white;
+  height: 3rem;
+  width: 5rem;
+  font-size: 1rem;
+  border-radius: 0 10rem 10rem 0;
+  border: none;
+  background-color: #284473;
+  opacity: 0.8;
+  outline: none;
+}
+
+div button:hover {
+  opacity: 1;
+}
+
+div button.clear {
+  color: #284473;
+  height: 3rem;
+  width: 5rem;
+  font-size: 1rem;
+  margin-left: 8px;
+  border-radius: 10rem 10rem;
+  border: none;
+  background-color: #fedfdb;
+  opacity: 0.8;
+  outline: none;
+}
+
+div button.clear:hover {
+  color: white;
+  opacity: 1;
+  background-color: #FF9B8C;
+}
+
+@media screen and (max-width: 415px) {
+  div input {
+    width: 80%;
+  }
+
+  div button {
     color: white;
     height: 3rem;
     width: 5rem;
+    padding: 8px;
     font-size: 1rem;
     border-radius: 0 10rem 10rem 0;
     border: none;
     background-color: #284473;
-    opacity: .8;
+    opacity: 0.8;
     outline: none;
-}
+  }
 
-div button:hover {
-    opacity: 1;
-}
-
-@media screen and (max-width: 360px) {
-    div input {
-        width: 80%;
-    }
+  div button.clear {
+    color: #f89406;
+    height: 3rem;
+    width: 5rem;
+    font-size: 1rem;
+    margin-left: 8px;
+    padding: 1rem;
+    border: none;
+    background-color: white;
+    opacity: 0.8;
+    outline: none;
+  }
 }

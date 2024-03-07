@@ -39,6 +39,8 @@
   "register": "Sign up",
   "Please enter your username": "Please enter your username",
   "Please enter the password": "Please enter the password",
+  "Please enter a valid email": "Please enter a valid email",
+  "Please enter your email": "Please enter your email",
   "Username": "Username",
   "Password": "Password",
   "Sign up": "Sign up",
@@ -49,6 +51,11 @@
   "The form is invalid": "The form is invalid",
   "Error during registration": "Error during registration",
   "Username already exists": "Username already exists",
+  "Email already exists": "Email already exists",
   "Logout": "Logout",
-  "Cart is empty": "Cart is empty"
+  "Cart is empty": "Cart is empty",
+  "Confirm Password": "Confirm Password",
+  "Please confirm the password": "Please confirm the password",
+  "The passwords do not match": "The passwords do not match",
+  "Clear": "Clear"
 }

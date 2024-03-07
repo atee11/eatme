@@ -1,22 +1,46 @@
 <div class="form-container">
     <h2 class="form-title mb-5 mt-5"> {{ "Sign up" | translate }} </h2>
-    <form #registerForm="ngForm" (ngSubmit)="onRegister(registerForm)" novalidate>
+    <form [formGroup]="registerForm" (ngSubmit)="onRegister(registerForm)">
         <div class="mb-3">
             <label for="username" class="form-label">{{ "Username" | translate }}</label>
-            <input type="text" class="form-control" id="username" required [(ngModel)]="username" name="username"
-                #usernameField="ngModel">
-            <div class="invalid-feedback" *ngIf="usernameField.invalid && usernameField.touched">
+            <input type="text" class="form-control" id="username" required formControlName="username">
+            <div class="invalid-feedback"
+                *ngIf="registerForm.controls.username.invalid && registerForm.controls.username.touched">
                 {{ "Please enter your username" | translate }}
             </div>
         </div>
         <div class="mb-3">
+            <label for="email" class="form-label">{{ "Email" | translate }}</label>
+            <input type="email" class="form-control" id="email" required formControlName="email">
+            <div class="invalid-feedback"
+                *ngIf="registerForm.controls.email.errors?.['required'] && registerForm.controls.email.touched">
+                {{ "Please enter your email" | translate }}
+            </div>
+            <div class="invalid-feedback"
+                *ngIf="registerForm.controls.email.errors?.['email'] && registerForm.controls.email.touched">
+                {{ "Please enter a valid email" | translate }}
+            </div>
+        </div>
+        <div class="mb-3">
             <label for="password" class="form-label">{{ "Password" | translate }}</label>
-            <input type="password" class="form-control" id="password" required [(ngModel)]="password" name="password"
-                #passwordField="ngModel">
-            <div class="invalid-feedback" *ngIf="passwordField.invalid && passwordField.touched">
+            <input type="password" class="form-control" id="password" required formControlName="password">
+            <div class="invalid-feedback"
+                *ngIf="registerForm.controls.password.invalid && registerForm.controls.password.touched">
                 {{ "Please enter the password" | translate }}
             </div>
         </div>
-        <button type="submit" class="btn btn-primary" [disabled]="!registerForm.valid">{{ "register" | translate }}</button>
+        <div class="mb-3">
+            <label for="confirmPassword" class="form-label">{{ "Confirm Password" | translate }}</label>
+            <input type="password" class="form-control" id="confirmPassword" required formControlName="confirmPassword">
+            <div class="invalid-feedback"
+                *ngIf="registerForm.controls.confirmPassword.invalid && registerForm.controls.confirmPassword.touched">
+                {{ "Please confirm the password" | translate }}
+            </div>
+            <div class="invalid-feedback" *ngIf="registerForm.value.password !== registerForm.value.confirmPassword">
+                {{ "The passwords do not match" | translate }}
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary" [disabled]="!registerForm.valid">{{ "register" | translate
+            }}</button>
     </form>
 </div>

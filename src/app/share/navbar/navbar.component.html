@@ -11,8 +11,7 @@
                     [routerLinkActiveOptions]="{exact:true}"> {{ 'home' | translate }} </a>
                 <a class="nav-link" routerLink="menu" routerLinkActive="active-link"> {{ 'menu' | translate }} </a>
                 <a class="nav-link" routerLink="about" routerLinkActive="active-link"> {{ 'about' | translate }} </a>
-                <a class="nav-link" routerLink="contact" routerLinkActive="active-link"> {{ 'contact' | translate }}
-                </a>
+                <a class="nav-link" routerLink="contact" routerLinkActive="active-link"> {{ 'contact' | translate }} </a>
                 <a class="nav-link btn" *ngIf="!(authService.user$ | async)" routerLink="login"
                     routerLinkActive="active-link"><i class="bi bi-box-arrow-in-right"></i>&nbsp; {{ 'login' | translate }} </a>
                 <a class="nav-link btn" *ngIf="!(authService.user$ | async)" routerLink="register"
@@ -26,7 +25,7 @@
                     <i class="bi bi-cart"></i>
                     <span class="badge">{{items.length || '0'}}</span>
                 </a>
-                <select class="form-select language" (change)="ChangeLang($event)" name="" id="">
+                <select class="form-select language select-en" (change)="ChangeLang($event)" name="" id="">
                     <option [selected]="lang==='en'" value="en">English</option>
                     <option [selected]="lang==='hu'" value="hu">Magyar</option>
                 </select>

@@ -15,6 +15,7 @@ import { MenupageComponent } from './pages/menupage/menupage.component';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { CartComponent } from './pages/cart/cart/cart.component';
 import { SearchComponent } from './search/search.component';
+import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import { IDBService } from './services/idbservice.service';
 import { RegisterComponent } from './pages/register/register.component';
@@ -54,6 +55,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     }),
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     ToastrModule.forRoot(),
     ToastNoAnimationModule.forRoot(),
     ToastNoAnimation,

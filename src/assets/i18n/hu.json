@@ -39,6 +39,8 @@
   "register": "Regisztráció",
   "Please enter your username": "Kérlek add meg a felhasználóneved",
   "Please enter the password": "Kérlek add meg a jelszavad",
+  "Please enter a valid email": "Kérlek létező email címet adj meg",
+  "Please enter your email": "Kérlek add meg az email címed",
   "Username": "Felhasználónév",
   "Password": "Jelszó",
   "Sign up": "Regisztráció",
@@ -49,6 +51,11 @@
   "The form is invalid": "Az űrlap érvénytelen",
   "Error during registration": "Hiba a regszitráció során",
   "Username already exists": "A felhasználónév már létezik",
+  "Email already exists": "Az e-mail cím már létezik",
   "Logout": "Kilépés",
-  "Cart is empty": " A kosár üres"
+  "Cart is empty": " A kosár üres",
+  "Confirm Password": "Jelszó megerősítése",
+  "Please confirm the password": "Kérlek erősítsd meg a jelszavad",
+  "The passwords do not match": "A jelszavak nem egyeznek",
+  "Clear": "Törlés"
 }
