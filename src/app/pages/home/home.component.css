@@ -8,14 +8,14 @@
 
 .carousel-item img {
   object-fit: cover;
-  width: 100%;
+  width: auto;
   height: 100vh;
   position: relative;
 }
 
 .content {
   top: 30%;
-  left: 20%;
+  left: 15%;
   position: absolute;
 }
 
